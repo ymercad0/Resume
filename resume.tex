@@ -1,0 +1,175 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Yariel Mercado}}\\
+	Dorado, Puerto Rico $\cdot$ yariel.mercado1@upr.edu $\cdot$ 939-263-3947 $\cdot$ https://github.com/Mercrist/ · https://www.linkedin.com/in/yariel-mercado/\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{University of Puerto Rico at Mayagüez}\hfill Mayagüez, Puerto Rico\\
+BS Software Engineering \textit{GPA: \bf{3.71}} \hfill Expected Graduation Date: May 2024\\
+
+\vspace{2mm}
+\begin{tabular}{ l l }
+	\textbf{Relevant Coursework:} Object Oriented 	                    				Programming, Data Structures \& Algorithms, \\ Intro to Software Engineering and Development (Ongoing) 
+\vspace{2mm}
+\end{tabular}
+
+\header{Technical Skills}
+\begin{tabular}{ l l }
+	Languages:       & Python, Java, C++                \\
+	Software Tools: & HTML, CSS, MongoDB, Flask \\
+	Other Tools:   & Git, LaTeX, CMake  \\
+	
+\end{tabular}
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{-1mm}
+
+\textbf{Google} \hfill Remote\\
+\textit{Tech Exchange Scholar} \hfill January 2022 - May 2022\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -1pt
+	\item Under the tutelage of Google Engineers, developed a full stack business website.
+	\item Excelled in classes while interviewing with various Google Engineers and gaining industry skills in fields such as applied data structures and software development.
+\end{itemize}
+
+\textbf{VIS Technologies} \hfill Dorado, Puerto Rico\\
+\textit{Shipping Handler} \hfill October 2018 - August 2021\\
+\vspace{-2mm}
+
+\begin{itemize} \itemsep -1pt
+	\item Placed in charge of shipping PLC equipment to other engineering companies.
+	\item Checked the part numbers for each item to ensure that the boxes being sent contained the correct equipment.
+	\item If any packages were incomplete, ordered the corresponding replacements with the part numbers and scheduled them as the next packages sent out.
+\end{itemize}
+
+\textbf{VIS Technologies} \hfill Toa Baja, Puerto Rico\\
+\textit{PLC Systems Programmer} \hfill December 2019 - January 2020\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -1pt
+	\item Collaborated with electrical engineers to program a bread proofer, PLC interface for Holsum\textquotesingle{}s bread assembly line.
+	\item Utilized bit addressing to map each function on the bread proofing screen to the PLC.
+	\item Designed the buttons and the various screen tabs displayed which made bread proofing 50\% faster.
+\end{itemize}
+
+\header{Extracurricular Projects}
+{\textbf{Embedded Systems Elevator Project}} {\sl C++, Python, pyserial} \hfill \hfill July 2021-Present\\
+\vspace{-1mm}
+
+\begin{itemize} \itemsep -1pt
+\item Collaborated with members of the RUMarino embedded division and, utilizing two Arduinos serially connected to a laptop, hosted a virtual elevator management system. Controlled via a Python interface on a laptop. Utilized COBS encoding and UART protocols to communicate between devices.\\
+\end{itemize}
+\vspace*{-1mm}
+
+\header{Personal Projects}
+
+{\textbf{Sudoku GUI/Backtracking Algorithm Visualizer}} {\sl Python, pygame} \hfill July 2021  \\
+\vspace{-1.5mm}
+
+\begin{itemize} \itemsep -1pt
+\item Developed an interactive Sudoku GUI which allows users to not only play the game, but visualize how the computer utilizes the backtracking algorithm in order to solve the randomly generated puzzle.
+\end{itemize}
+
+\vspace*{-1mm}
+{\textbf{Discord Bot}} {\sl Python, discord.py, BeautifulSoup} \hfill May 2021 \\
+\vspace{-2.5mm}
+
+\begin{itemize} \itemsep -1pt
+\item Deployed a discord bot which supports a variety of multimedia commands such as: web scraping, detailed statistical information on COVID-19, and more. Hosted on a Raspberry Pi 3.\\
+\end{itemize}
+\vspace*{1mm}
+
+\header{Associations}
+
+\vspace{-1mm} \textbf{Computer Alliance of Hispanic Serving Institutions (CAHSI)} \hfill August 2021-Present\\
+\begin{itemize} \itemsep -1pt
+\vspace{-2mm}
+\item Student association network focused on problem solving and critical thinking via coding, as well as professional development. \\
+\end{itemize}
+
+\vspace{-0.5mm}
+\textbf{RUMarino- Autonomous Water Vehicle Club} \hfill July 2021-Present \\ 
+\vspace{-2mm}
+\begin{itemize} \itemsep -1pt
+\item Passionately a member of the embedded division at the RUMarino student club, which competes yearly at RoboSub. Programming the current prototype's Arduino, the brain of the vehicle.\\ 
+\end{itemize}
+ 
+
+
+\ 
+\end{document}
