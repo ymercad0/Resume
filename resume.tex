@@ -79,19 +79,19 @@
 %==== Education ====%
 \header{Education}
 \textbf{University of Puerto Rico at Mayagüez} \hfill Expected Graduation Date: May 2024\\	
-BS Software Engineering \textit{GPA: \bf{3.72}} 
+B.S. Software Engineering \textit{GPA: \bf{3.72}} 
 
 \vspace{2mm}
 \begin{tabular}{ l l }
-	\textbf{Relevant Coursework:} Object Oriented 	                    			Programming, Applied Data Structures \& Algorithms, \\ Intro to Software Engineering, Programming Languages (current), Software Design (current)
+	\textbf{Relevant Coursework:} Applied Data Structures \& Algorithms, Intro to SWE, Software Design \& Testing, \\ Machine Learning, Operating Systems, Cryptography (current), Databases (current)
 \vspace{2mm}
 \end{tabular}
 
 \header{Technical Skills}
 \begin{tabular}{ l l }
-	Programming Languages: & Python, Java, C++    \\
-	Software Tools: & HTML, CSS, Flask, pandas \\
-	Other Tools:   & Git, \LaTeX{}, CMake  \\
+	Programming Languages: & Python, Java, C/C++    \\
+	Software Tools: & HTML, CSS, Flask, pandas, JUnit, Guice, Mockito, TensorFlow \\
+	Other Tools:   & Git, Perforce, \LaTeX{}, SQL \\
 	
 \end{tabular}
 \vspace{2mm}
@@ -99,14 +99,23 @@ BS Software Engineering \textit{GPA: \bf{3.72}}
 %==== Experience ====%
 \header{Work Experience}
 \vspace{-1mm}
+\textbf{UPRM} \hfill On-Site\\
+
+\textit{OS Teaching Assistant} \hfill August 2023 - Present \\
+\vspace{-2mm}
+\begin{itemize} \itemsep -1pt
+	\item Placed \textbf{in charge} of 30+ students for the weekly Operating Systems laboratories.
+	\item \textbf{Reinforced} core concepts, in C, while writing and administering exams.
+\end{itemize}
+\vspace{-2mm}
 
 \textbf{Google} \hfill On-Site\\
 \textit{Google Chat Backend Intern} \hfill May 2023 - August 2023\\
 \vspace{-2mm}
 \begin{itemize} \itemsep -1pt
-	\item \textbf{Implemented} custom fields for metrics collected from \textbf{Spanner} Queue RPCs.
-	\item Surfaced the updated metrics to a live, time-series dashboard tracking over 300 actions \& utilized by \textbf{dozens} of teams.
-	\item Rigorously \textbf{unit tested} the newly created modules built with internal Java frameworks.
+	\item \textbf{Introduced} custom metrics collected from \textbf{Spanner} RPCs.
+	\item Surfaced the metrics to a live, time-series dashboard tracking over 150+ actions and utilized by \textbf{dozens} of teams within Chat.
+	\item \textbf{Designed} unit \& integration tests to evaluate the metrics via internal Java frameworks.
 \end{itemize}
 \vspace{-2mm}
 
@@ -114,7 +123,7 @@ BS Software Engineering \textit{GPA: \bf{3.72}}
 \textit{GPU Design Verification Intern} \hfill May 2022 - August 2022\\
 \vspace{-2mm}
 \begin{itemize} \itemsep -1pt
-	\item \textbf{Designed} a metrics dashboard which unified \textbf{80} hardware teams' data onto an Excel workbook.
+	\item \textbf{Engineered} a metrics dashboard which unified \textbf{80} hardware teams' data onto Excel.
 	\item \textbf{Doubled} the efficiency of the development cycle by rewriting the script's logic. 
 	\item Parsed CSV, YAML, and XLSX files, organized the data onto \textbf{pandas} dataframes, and wrote via the \textbf{XlsxWriter} library. 
 \end{itemize}
@@ -124,19 +133,31 @@ BS Software Engineering \textit{GPA: \bf{3.72}}
 \textit{Tech Exchange Scholar} \hfill January 2022 - May 2022\\
 \vspace{-2mm}
 \begin{itemize} \itemsep -1pt
-	\item Selected, after several interview rounds, to become a part of Google's tech exchange program. 
-	\item Learned \textbf{industry best practices} under the supervision of Google project mentors while launching two full stack websites.
+	\item Selected, after several interview rounds, to become a part of Google's Tech Exchange program. 
+	\item Learned \textbf{industry best practices} under the supervision of Google engineers while launching two, full stack websites.
 \end{itemize}
+\vspace{-2mm}
 
 \header{Technical Projects}
+{\textbf{Tweets Disaster Classification}} \hfill May 2023 \\
+\vspace{-2mm}
+\begin{itemize} \itemsep -1pt
+\item Reached the \textbf{top 10} rankings of a competition with a binary text classifier. 
+
+\item Attained high accuracies by implementing FFNNs \& CNNs via \textbf{TensorFlow}.
+
+\item Utilized \textbf{Matplotlib} to develop the frequency analysis for the data.
+\end{itemize}
+\vspace{-2mm}
+
 {\textbf{Pathway Internships}} \hfill April 2022 \\
 \vspace{-2mm}
 \begin{itemize} \itemsep -1pt
-\item Deployed with \textbf{Heroku} an internship review board website alongside teammates at Google.
+\item Deployed with \textbf{Heroku} an internship review website alongside teammates at Google.
 
 \item Allows users to post internship reviews for a company under their account. Company scores are appropriately updated and ranked.
 
-\item Built the backend utilizing the \textbf{Flask} framework. User data is \textbf{securely encrypted} and stored along with reviews in a CRUD, \textbf{MongoDB} database. Integrated unit testing during development.
+\item Built the backend utilizing the \textbf{Flask} framework. User data is \textbf{securely encrypted} and stored along with reviews in a CRUD, \textbf{MongoDB} database. 
 \end{itemize}
 
 {\textbf{Embedded Systems Elevator Project}} \hfill \hfill July 2021-December 2021\\
@@ -145,31 +166,25 @@ BS Software Engineering \textit{GPA: \bf{3.72}}
 \begin{itemize} \itemsep -1pt
 \item Developed a virtual elevator management system along members of the RUMarino embedded division.
 
-\item \textbf{Mentored} the first years collaborating with the team in: \textbf{OOP, C++, and Git}.
+\item \textbf{Mentored} first years collaborating with the team in: \textbf{OOP, C++, and Git}.
 
 \item Utilizing two Arduinos serially connected to a laptop, the elevator system, written in \textbf{C++}, was controlled via a \textbf{Python} GUI on a laptop.\\
 \end{itemize}
 \vspace*{-0.5mm}
-
-{\textbf{Sudoku GUI/Backtracking Algorithm Visualizer}} \hfill July 2021  \\
-\vspace{-1.8mm}
-\begin{itemize} \itemsep -1pt
-\item Created an interactive Sudoku GUI, with the \textbf{Pygame} library, which allows users to not only play the game, but visualize how the backtracking algorithm solves the randomly generated Sudoku grid.
-\end{itemize}
 
 \header{Associations}
 
 \vspace{-1mm} \textbf{Computer Alliance of Hispanic Serving Institutions (CAHSI)} \hfill August 2021-Present\\
 \begin{itemize} \itemsep -1pt
 \vspace{-2mm}
-\item Student association network focused on problem solving as well as professional development and networking. \\
+\item Assisted and mentored several sessions for CAHSI's Coding Club, focused on DS\&A. \\
 \end{itemize}
 
 \vspace{-1mm}
 \textbf{RUMarino- Autonomous Water Vehicle Club} \hfill July 2021-May 2022 \\ 
 \vspace{-2mm}
 \begin{itemize} \itemsep -1pt
-\item Alongside the leads of the embedded division at the RUMarino student club, formed an integral part of the software development process of the vehicle prototype. \\ 
+\item Formed an integral part of the software development process of the submersible. \\ 
 \end{itemize}
  
 
